@@ -14,7 +14,7 @@ const App = () => {
   if (tours.length === 0) {
     return (
       <div className="empty-tour-list">
-        <h2>No tour left</h2>
+        <h2>No tours left</h2>
         <button className="refresh" onClick={() => setTour(data)}>
           REFRESH
         </button>
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="container">
       <div>
-        <h2 className="title">TOUR PLANNER</h2>
+        <h2 className="title">TOUR PLANNERS</h2>
       </div>
 
       <div className="card-container">
