@@ -2,8 +2,8 @@
 
 function App() {
   return (
-    <div className="App">
-      HIII
+    <div className="wrapper">
+      
     </div>
   );
 }
