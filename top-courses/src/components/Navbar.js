@@ -2,7 +2,9 @@
 
 function Navbar(){
     return (
-        <div></div>
+        <div className="">
+            <h1>Top Courses</h1>
+        </div>
     );
 }
 
