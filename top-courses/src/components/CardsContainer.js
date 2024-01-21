@@ -16,7 +16,7 @@ function CardsContainer(props) {
 
 
   return (
-    <div className="">
+    <div className="flex flex-wrap justify-center gap-4 mb-4">
       {allcoursesData().map((course) => (
         <Card key={course.id} course={course} />
       ))}

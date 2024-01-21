@@ -6,6 +6,7 @@ import { useEffect,useState } from "react";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from "./components/Loader";
+import  "./index.css"
 
 
 
@@ -35,14 +36,17 @@ const[loading,setLoading] = useState(true);
   },[])
 
   return (
-    <div className="wrapper">
-      <div className="">   <Navbar />   </div>
-      <div className="">   <CourseFilter courseData ={filterData} />   </div>
-      <div>
+    <div className=" flex flex-col">
+      <div>   <Navbar />   </div>
+      <div className="bg-bgDark min-h-screen">   
+      <CourseFilter courseData ={filterData} />  
+      <div className="w-11/12 max-w-[1200px]  mx-auto flex flex-wrap items-center justify-center">
         {
           loading ? (<Loader/>) : (<CardsContainer courses={courses}/>)
         }
       </div>
+       </div>
+      
       
     </div>
   );
