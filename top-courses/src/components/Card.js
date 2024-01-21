@@ -10,12 +10,13 @@ function Card(props) {
           alt={course.image.alt}
           className="w-full min-h-[168px] object-cover"
         />
-      </div>
-      <div className="w-[40px] h-[40px] rounded-full bg-white grid place-items-center absolute right-2 -bottom-3 shadow-xl">
+          <div className="w-[40px] h-[40px] rounded-full bg-white grid place-items-center absolute right-2 -bottom-3 shadow-xl">
         <button>
           <FcLike />
         </button>
       </div>
+      </div>
+    
       <div className="p-4 text-white">
         <p className="font-semibold text-lg leading-6">{course.title}</p>
         <p className="text-base mt-2">
