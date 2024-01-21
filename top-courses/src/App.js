@@ -38,7 +38,7 @@ const[loading,setLoading] = useState(true);
   return (
     <div className=" flex flex-col">
       <div>   <Navbar />   </div>
-      <div className="bg-bgDark min-h-screen">   
+      <div className="bg-bgDark2 min-h-screen">   
       <CourseFilter courseData ={filterData} />  
       <div className="w-11/12 max-w-[1200px]  mx-auto flex flex-wrap items-center justify-center">
         {
