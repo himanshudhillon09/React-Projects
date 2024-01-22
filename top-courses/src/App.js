@@ -13,6 +13,9 @@ import  "./index.css"
 function App() {
 const[courses,setCourses] = useState([]);
 const[loading,setLoading] = useState(true);
+const [category,setCategory] = useState("All");
+
+
 
  async function fetchData()
 {
@@ -39,10 +42,10 @@ const[loading,setLoading] = useState(true);
     <div className=" flex flex-col">
       <div>   <Navbar />   </div>
       <div className="bg-bgDark2 min-h-screen">   
-      <CourseFilter courseData ={filterData} />  
+      <CourseFilter courseData ={filterData} category ={category} setCategory ={setCategory} />  
       <div className="w-11/12 max-w-[1200px]  mx-auto flex flex-wrap items-center justify-center">
         {
-          loading ? (<Loader/>) : (<CardsContainer courses={courses}/>)
+          loading ? (<Loader/>) : (<CardsContainer category={category} courses={courses}/>)
         }
       </div>
        </div>
