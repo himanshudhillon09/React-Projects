@@ -1,8 +1,10 @@
 import Navbar from "./components/Navbar";
 import { Route,Routes } from "react-router";
 import { useState } from "react";
-
-
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import Home from "./components/Home"; 
+import Dashboard from "./components/Dashboard";
 
 
 function App() {

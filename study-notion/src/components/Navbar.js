@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
-import logo from "..asssets/logo.svg";
+import logo from "../asssets/Logo.svg";
 
 const Navbar = (props) => {
   let isLoggedIn = props.isLoggedIn;
@@ -14,8 +14,8 @@ const Navbar = (props) => {
       <nav>
         <ul>
           <li>{<Link to="/">Home</Link>}</li>
-          <li>{<Link to="/about">About</Link>}</li>
-          <li>{<Link to="/contact">Contact</Link>}</li>
+          <li>{<Link to="/">About</Link>}</li>
+          <li>{<Link to="/">Contact</Link>}</li>
         </ul>
       </nav>
 
