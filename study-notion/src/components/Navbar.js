@@ -7,19 +7,19 @@ const Navbar = (props) => {
   let isLoggedIn = props.isLoggedIn;
   let setIsLoggedIn = props.setIsLoggedIn;
   return (
-    <div>
+    <div className="">
       <Link to="/">
         <img src={logo} alt="logo" className="" />
       </Link>
-      <nav>
-        <ul>
+      <nav className="">
+        <ul className=" ">
           <li>{<Link to="/">Home</Link>}</li>
           <li>{<Link to="/">About</Link>}</li>
           <li>{<Link to="/">Contact</Link>}</li>
         </ul>
       </nav>
 
-      <div>
+      <div className="">
         {!isLoggedIn && (
           <Link to="/login">
             <button>Login</button>
