@@ -1,8 +1,9 @@
 import React from "react";
-import Signup from "./Signup";
+import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 import frame from "../asssets/frame.png";
 
-const Template = ({ title, desc1, desc2, image, formType, setIsloggedIn }) => {
+const Template = ({ title, desc1, desc2, imageSource, formType, setIsloggedIn }) => {
   return (
     <div>
       <div>
@@ -12,19 +13,20 @@ const Template = ({ title, desc1, desc2, image, formType, setIsloggedIn }) => {
           <span>{desc2}</span>
         </p>
 
-        {formType === "signup" ? <Signup /> : <Login />}
-        E2R435T678909875643W2
+        {formType === "signup" ? <SignupForm /> : <LoginForm />}
+
         <div>
           <div></div>
           <p>OR</p>
           <div></div>
-
-          <button>Sign Up with Google</button>
         </div>
+        <button>
+          <p>Sign Up with Google</p>
+        </button>
       </div>
       <div>
-        <img src={frame} alt="pattern-image" />
-        <img src={image} alt="student-image" />
+        <img src={frame} alt="pattern" />
+        <img src={imageSource} alt="student" />
       </div>
     </div>
   );
