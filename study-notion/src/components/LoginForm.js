@@ -26,10 +26,10 @@ function LoginForm(){
           <label>
            <p>Password <sup>*</sup> </p>  
               
-            <input required type={showPass===false ? "password":"text"} placeholder="Enter password" name="password" value={formData.password} onChange={changeHandler} > 
+            <input required type={showPass===false ? "password":"text"} placeholder="Enter password" name="password" value={formData.password} onChange={changeHandler} /> 
             <span onClick={() => setShowPass((prev)=> !prev)} >{showPass===false ? (<AiOutlineEyeInvisible/>):(<AiOutlineEye/>)}</span>
-            <link to='#'><p>Forgot password ?</p></link>
-            </input>
+            <Link to='#'><p>Forgot password ?</p></Link>
+            
             </label>
 
 
