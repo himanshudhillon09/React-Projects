@@ -7,32 +7,32 @@ const Navbar = (props) => {
   let isLoggedIn = props.isLoggedIn;
   let setIsLoggedIn = props.setIsLoggedIn;
   return (
-    <div className="">
+    <div className="w-11/12 max-w-[1160px] mx-auto flex flex-row justify-between items-center py-4">
       <Link to="/">
-        <img src={logo} alt="logo" className="" />
+        <img src={logo} alt="Logo" height={32} width={160} loading="lazy"/>
       </Link>
-      <nav className="">
-        <ul className=" ">
+      <nav >
+        <ul className="flex gap-x-6 text-richblack-25 ">
           <li>{<Link to="/">Home</Link>}</li>
-          <li>{<Link to="/">About</Link>}</li>
-          <li>{<Link to="/">Contact</Link>}</li>
+          <li>{<Link to="/about">About</Link>}</li>
+          <li>{<Link to="/contact">Contact</Link>}</li>
         </ul>
       </nav>
 
-      <div className="">
+      <div className="flex items-center gap-x-4 text-richblack-100">
         {!isLoggedIn && (
           <Link to="/login">
-            <button>Login</button>
+            <button className="bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700">Login</button>
           </Link>
         )}
         {!isLoggedIn && (
           <Link to="/signup">
-            <button>Signup</button>
+            <button className="bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700">Signup</button>
           </Link>
         )}
         {isLoggedIn && (
           <Link to="/">
-            <button
+            <button className="bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700"
               onClick={() => {
                 setIsLoggedIn(false);
                 toast.success("Logged Out");
@@ -44,7 +44,7 @@ const Navbar = (props) => {
         )}
         {isLoggedIn && (
           <Link to="/dashboard">
-            <button>Dashboard</button>
+            <button className="bg-richblack-800 py-[8px] px-[12px] rounded-[8px] border border-richblack-700">Dashboard</button>
           </Link>
         )}
       </div>
