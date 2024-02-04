@@ -1,37 +1,12 @@
-import { React, useState, useEffect } from "react";
-import axios from "axios";
+import { React} from "react";
 import Loader from './Loader';
-
-
-
-
+import useGif from "../hooks/useGif";
 
 
 
 function RandomGenerator() {
 
-    const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
-    const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
-
-    const [gif, setGif] = useState('');
-    const [loading, setLoading] = useState('false');
-
-    useEffect(() => {
-        fetchData();
-    },[])
-
-
-    
-    async function fetchData() {
-        setLoading(true);
-        const output = await axios.get(url);
-        const imageUrl = output.data.data.images.downsized_large.url;
-        setLoading(false);
-        setGif(imageUrl);
-        
-    }
-
-
+    const {gif,loading,fetchData} = useGif();
 
 
     return (
