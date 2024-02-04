@@ -17,7 +17,7 @@ React App having functionality to generate course cards based on desired domains
 
 ## Features
 
-  - React toast Notification
+  - React toast notifications
   - CSS Spinner for loading effect while API fetching
   - Responsive UI design
 
