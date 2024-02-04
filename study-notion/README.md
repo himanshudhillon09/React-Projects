@@ -16,7 +16,6 @@ React app having login and signup functionality with amazing hot toast notificat
 
 
 ## Deployment Link
- https://study-notion-nb0puwraq-himanshudhillon09s-projects.vercel.app/
-
+https://react-projects-2klwotnlq-himanshudhillon09s-projects.vercel.app/
 
 
