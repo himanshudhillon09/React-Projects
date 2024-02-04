@@ -1,4 +1,4 @@
-# GIF GENERATOR
+# TOP COURSES
 
 React App having functionality to generate course cards based on desired domains having like buttons and react toasts.
 
